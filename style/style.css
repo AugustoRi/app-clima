@@ -1,0 +1,54 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: #fff;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#1c2143,#00abcd);
+}
+
+.localizacao,
+.temperatura{
+  height: 35vh;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.localizacao .icon{
+  width: 200px;
+  height: 200px;
+  background-image: url("../images/icone-clima-200.svg");
+  background-position: center;
+  background-size: center;
+  background-repeat: no-repeat;
+}
+
+.temperatura{
+  flex-direction: column;
+}
+
+.graus-wrap{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-bottom: 3px solid #000;
+}
+
+.graus-wrap h2{
+  font-size: 40px;
+}
+
+.graus-wrap span{
+  margin: 10px;
+  font-size: 30px;
+}
